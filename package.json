@@ -2,7 +2,7 @@
   "name": "kevinmdugas.github.io",
   "version": "0.1.0",
   "description": "My professional portfolio",
-  "main": "index.html",
+  "main": "src/about/about.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
