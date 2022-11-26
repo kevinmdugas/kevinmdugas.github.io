@@ -1,0 +1,23 @@
+{
+  "name": "kevinmdugas.github.io",
+  "version": "0.1.0",
+  "description": "My professional portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinmdugas/kevinmdugas.github.io.git"
+  },
+  "author": "Kevin Dugas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinmdugas/kevinmdugas.github.io/issues"
+  },
+  "homepage": "https://github.com/kevinmdugas/kevinmdugas.github.io#index.html",
+  "dependencies": {
+    "eslint": "^8.28.0",
+    "prettier": "^2.8.0"
+  }
+}
