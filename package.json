@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kevinmdugas/kevinmdugas.github.io#index.html",
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "eslint": "^8.28.0",
     "prettier": "^2.8.0"
   }
