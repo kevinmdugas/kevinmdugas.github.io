@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/kevinmdugas/kevinmdugas.github.io/issues"
   },
-  "homepage": "https://github.com/kevinmdugas/kevinmdugas.github.io#index.html",
+  "homepage": "https://github.com/kevinmdugas/kevinmdugas.github.io#src/about/about.html",
   "dependencies": {
     "bootstrap": "^5.2.3",
     "eslint": "^8.28.0",
