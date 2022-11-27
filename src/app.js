@@ -2,7 +2,7 @@ const renderNav = (title) => {
   const body = document.querySelector("body");
 
   const nav = document.createElement("ul");
-  nav.className = "nav nav-pills";
+  nav.className = "nav nav-pills navbar-expand-lg navbar-light p-2";
 
   const aboutNav = document.createElement("li");
   aboutNav.className = "nav-item";
