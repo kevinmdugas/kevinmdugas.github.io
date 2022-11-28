@@ -1,8 +1,13 @@
 const renderNav = (title) => {
-  const body = document.querySelector("body");
+  const container = document.querySelector("#nav-container");
 
-  const nav = document.createElement("ul");
-  nav.className = "nav nav-pills";
+  const mainNav = document.createElement("div");
+  mainNav.className =
+    "collapse navbar-collapse justify-content-end align-center";
+  mainNav.id = "main-nav";
+
+  const root = document.createElement("ul");
+  root.className = "nav nav-pills";
 
   const aboutNav = document.createElement("li");
   aboutNav.className = "nav-item";
@@ -11,12 +16,16 @@ const renderNav = (title) => {
   aboutLink.href = "index.html";
   aboutLink.textContent = "About";
 
+  aboutNav.append(aboutLink);
+
   const resumeNav = document.createElement("li");
   resumeNav.className = "nav-item";
   const resumeLink = document.createElement("a");
   resumeLink.className = "nav-link";
   resumeLink.href = "resume.html";
   resumeLink.textContent = "Resume";
+
+  resumeNav.append(resumeLink);
 
   const projectsNav = document.createElement("li");
   projectsNav.className = "nav-item";
@@ -25,12 +34,16 @@ const renderNav = (title) => {
   projectsLink.href = "projects.html";
   projectsLink.textContent = "Projects";
 
+  projectsNav.append(projectsLink);
+
   const contactNav = document.createElement("li");
   contactNav.className = "nav-item";
   const contactLink = document.createElement("a");
   contactLink.className = "nav-link";
   contactLink.href = "contact.html";
   contactLink.textContent = "Contact";
+
+  contactNav.append(contactLink);
 
   switch (title) {
     case "about":
@@ -47,15 +60,11 @@ const renderNav = (title) => {
       break;
   }
 
-  aboutNav.append(aboutLink);
-  resumeNav.append(resumeLink);
-  projectsNav.append(projectsLink);
-  contactNav.append(contactLink);
+  root.append(aboutNav);
+  root.append(resumeNav);
+  root.append(projectsNav);
+  root.append(contactNav);
 
-  nav.append(aboutNav);
-  nav.append(resumeNav);
-  nav.append(projectsNav);
-  nav.append(contactNav);
-
-  body.append(nav);
+  mainNav.append(root);
+  container.append(mainNav);
 };
