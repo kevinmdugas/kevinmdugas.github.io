@@ -2,12 +2,11 @@ const renderNav = (title) => {
   const container = document.querySelector("#nav-container");
 
   const mainNav = document.createElement("div");
-  mainNav.className =
-    "collapse navbar-collapse justify-content-end align-center";
+  mainNav.className = "collapse navbar-collapse justify-content-end";
   mainNav.id = "main-nav";
 
   const root = document.createElement("ul");
-  root.className = "nav nav-pills";
+  root.className = "nav nav-pills nav-justified";
 
   const aboutNav = document.createElement("li");
   aboutNav.className = "nav-item";
