@@ -1,8 +1,19 @@
 const renderNav = (title) => {
   const body = document.querySelector("body");
 
-  const nav = document.createElement("ul");
-  nav.className = "nav nav-pills navbar-expand-lg navbar-light p-2";
+  const navContainer = document.createElement("container");
+  const navRow = document.createElement("div");
+  navRow.className = "row py-2 px-3";
+
+  // const icon = document.createElement('img')
+  // icon.className = "col-1"
+  const name = document.createElement("a");
+  name.className = "col-4 fs-3 fw-bold text-decoration-none text-primary";
+  name.textContent = "Kevin Dugas";
+  name.href = "index.html";
+
+  const navbar = document.createElement("ul");
+  navbar.className = "col-8 nav nav-pills justify-content-end navbar-light";
 
   const aboutNav = document.createElement("li");
   aboutNav.className = "nav-item";
@@ -52,10 +63,15 @@ const renderNav = (title) => {
   projectsNav.append(projectsLink);
   contactNav.append(contactLink);
 
-  nav.append(aboutNav);
-  nav.append(resumeNav);
-  nav.append(projectsNav);
-  nav.append(contactNav);
+  navbar.append(aboutNav);
+  navbar.append(resumeNav);
+  navbar.append(projectsNav);
+  navbar.append(contactNav);
 
-  body.append(nav);
+  navRow.append(name);
+  navRow.append(navbar);
+
+  navContainer.append(navRow);
+
+  body.append(navContainer);
 };
